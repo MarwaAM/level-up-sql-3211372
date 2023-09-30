@@ -5,3 +5,9 @@
 -- Stevensen, Stephensen, Stevenson, Stephenson, Stuyvesant
 
 -- There are four people in the party. Today is June 14th.
+
+SELECT c.CustomerId, c.FirstName, c.LastName, r.Date, r.partySize
+FROM Customers c
+INNER JOIN Reservations r
+ON c.customerId = r.customerId
+WHERE c.FirstName LIKE 'St%' AND r.partySize = 4

@@ -6,14 +6,14 @@
 
 SELECT Name, Price
 FROM Dishes
-ORDER BY Price
+ORDER BY Price;
 
 SELECT Name, Price, Type
 FROM Dishes
 WHERE Type IN ('Appetizer', 'Beverage')
-ORDER BY Type
+ORDER BY Type;
 
 SELECT Name, Price, Type
 FROM Dishes
 WHERE Type  != 'Beverage'
-ORDER BY Type
+ORDER BY Type;
